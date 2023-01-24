@@ -43,13 +43,13 @@ body::-webkit-scrollbar {
   position: fixed;
   z-index: 10;
   mix-blend-mode: difference;
-  margin: 30px;
+  margin: 2em;
 }
 .name {
-  margin: 20px 0 0 30px;
+  margin: 0.5em 0 0 30px;
   font-family: "Montserrat", sans-serif;
   font-weight: 100;
-  font-size: 50px;
+  font-size: clamp(2rem, 2.5vw, 4rem);
   width: fit-content;
   transition: 250ms ease-in-out;
   pointer-events: none;
@@ -58,11 +58,11 @@ body::-webkit-scrollbar {
   color: rgb(0, 255, 157);
 }
 .job {
-  margin: 2px 0 0 30px;
+  margin: 0.5em 0 0 30px;
   width: fit-content;
   font-family: "Montserrat", sans-serif;
   font-weight: 200;
-  font-size: 15px;
+  font-size: clamp(1rem, 1.5vw, 2rem);
   transition: 250ms ease-in-out;
   pointer-events: none;
 }
@@ -70,14 +70,14 @@ body::-webkit-scrollbar {
   color: rgb(0, 255, 157);
 }
 .nav {
-  margin: 100px 0 0 30px;
+  margin: 5vw 0 0 30px;
 }
 .nav-links ul li {
   width: fit-content;
   list-style: none;
   font-family: "Hind Guntur", sans-serif;
   font-weight: 300;
-  font-size: 16px;
+  font-size: clamp(1rem, 0.8vw, 2rem);
   color: white;
   transition: 250ms ease-in-out;
   /* padding: 0px 20px 0px 20px; */
@@ -92,7 +92,7 @@ body::-webkit-scrollbar {
 .title {
   font-family: "Cormorant Garamond", serif;
   font-weight: 400;
-  font-size: 17px;
+  font-size: clamp(1rem, 0.8vw, 2rem);
   text-align: justify;
   padding-right: 20px;
   padding-bottom: 40px;
@@ -107,7 +107,7 @@ body::-webkit-scrollbar {
 .aboutme {
   font-family: "Cormorant Garamond", serif;
   font-weight: 400;
-  font-size: 15px;
+  font-size: clamp(1rem, 0.8vw, 2rem);
   text-align: justify;
   padding-right: 50px;
   padding-bottom: 50px;
@@ -179,4 +179,22 @@ body::-webkit-scrollbar {
 }
 .bx {
   vertical-align: middle;
+}
+/* Media Query */
+
+@media only screen and (max-width: 600px) {
+  .title {
+    width: 60%;
+  }
+  .aboutme {
+    width: 60%;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .title {
+    width: 50%;
+  }
+  .aboutme {
+    width: 50%;
+  }
 }
