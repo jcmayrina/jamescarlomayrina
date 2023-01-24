@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Hind+Guntur:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/*
+Font import 
+font-family: 'Cormorant Garamond', serif;
+font-family: 'Hind Guntur', sans-serif;
+font-family: 'Montserrat', sans-serif;
+*/
+* {
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+body {
+  min-height: 100vh;
+  height: 100%;
+  margin: 0;
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+  background-image: radial-gradient(
+    circle,
+    #000000,
+    #050505,
+    #0a0a0a,
+    #0e0e0e,
+    #121212
+  );
+}
+body::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+#bgrad {
+  mix-blend-mode: exclusion;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  pointer-events: none;
+}
+.info {
+  position: fixed;
+  z-index: 10;
+  mix-blend-mode: difference;
+  margin: 30px;
+}
+.name {
+  margin: 20px 0 0 30px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
+  font-size: 50px;
+  width: fit-content;
+  transition: 250ms ease-in-out;
+  pointer-events: none;
+}
+.name:hover {
+  color: rgb(0, 255, 157);
+}
+.job {
+  margin: 2px 0 0 30px;
+  width: fit-content;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 200;
+  font-size: 15px;
+  transition: 250ms ease-in-out;
+  pointer-events: none;
+}
+.job:hover {
+  color: rgb(0, 255, 157);
+}
+.nav {
+  margin: 100px 0 0 30px;
+}
+.nav-links ul li {
+  width: fit-content;
+  list-style: none;
+  font-family: "Hind Guntur", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  color: white;
+  transition: 250ms ease-in-out;
+  /* padding: 0px 20px 0px 20px; */
+}
+.nav-links ul li:hover {
+  padding: 10px 20px 10px 20px;
+  background-color: white;
+  cursor: pointer;
+  color: black;
+}
+
+.title {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 400;
+  font-size: 17px;
+  text-align: justify;
+  padding-right: 20px;
+  padding-bottom: 40px;
+  width: 50%;
+  float: right;
+  position: fixed;
+  right: 100px;
+  bottom: 20px;
+  mix-blend-mode: difference;
+  display: inline-block;
+}
+.aboutme {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 400;
+  font-size: 15px;
+  text-align: justify;
+  padding-right: 50px;
+  padding-bottom: 50px;
+  width: 50%;
+  float: right;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  mix-blend-mode: difference;
+}
+.topblur {
+  width: 80%;
+  position: fixed;
+  top: 0;
+  right: 150px;
+  height: 30px;
+  z-index: 2;
+  opacity: 0.3;
+  border-bottom: 1px solid whitesmoke;
+}
+.botblur {
+  width: 60%;
+  position: fixed;
+  bottom: 0;
+  height: 30px;
+  z-index: 2;
+  opacity: 0.3;
+  border-top: 1px solid whitesmoke;
+}
+.leftblur {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  height: 70vh;
+  width: 30px;
+  z-index: 2;
+  opacity: 0.3;
+  border-right: 1px solid whitesmoke;
+}
+.rightblur {
+  width: 100%;
+  position: fixed;
+  right: 0;
+  height: 90vh;
+  width: 30px;
+  z-index: 2;
+  opacity: 0.3;
+  border-left: 1px solid whitesmoke;
+}
+.content2 {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.dim {
+  display: inline-block;
+  color: #474747;
+}
+.whole {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.bx {
+  vertical-align: middle;
+}
